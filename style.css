@@ -1,0 +1,16 @@
+:root {
+    --primary-color-green : #B9FF66 ;
+    --primary-color-dark : #191A23 ;
+    --primary-color-light : #F3F3F3 ;
+    --heading1 : 3.75rem ;
+    --heading2 : 2.5rem ;
+    --heading3 : 1.875rem ;
+    --heading4 : 1.25rem ;
+    --para : 1.125rem ;
+    --h1mob : 2.6875rem ;
+    --h2mob : 2.25rem ;
+    --h3mob : 1.625rem ;
+    --h4mob : 1.125rem ;
+    --paramob : 1rem;
+    --maxwidth : 1440px
+}
