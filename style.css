@@ -21,7 +21,10 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    max-width: var(--maxwidth);
+    margin: auto;
 }
+
 .navbar {
     height: 4.25rem;
     overflow: hidden;
@@ -62,4 +65,57 @@ body {
     margin-left: 30px;
     font-family: 'Space Grotesk',sans-serif;
     font-weight: 500;
+}
+
+.section-container {
+    max-width: var(--maxwidth);
+    display: flex;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    gap: 30px;
+    padding: 0px 100px;
+    margin-top: 40px;
+}
+ 
+.section-content {
+    flex: 1;
+    margin: auto;
+}
+
+.section-heading{
+    font-size: var(--heading1);
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 30px;
+    line-height: auto;
+}
+
+.section-desc{
+    font-size: var(--heading4);
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.btn-black {
+    padding: 20px 35px;
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-light);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.section-img {
+    flex: 1;
+    margin: 0;
+}
+
+.section-img img{
+    width: auto;
+    height: 515px;
 }
