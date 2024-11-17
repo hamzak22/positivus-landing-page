@@ -15,6 +15,51 @@
     --h4mob : 1.125rem ;
     --paramob : 1rem;
     --maxwidth : 1440px ;
-    --regular : 300;
+    --regular : 400;
     --medium : 600;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+.navbar {
+    height: 4.25rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 2.625rem;
+    text-decoration: none;
+    list-style: none;
+    font-weight: var(--regular);
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: var(--primary-color-dark);
+    font-weight: var(--regular);
+    font-size: 1.1rem;
+}
+
+.menu-btn {
+    background-color: white;
+    border-radius: 0.875rem;
+    border: 2px solid #191A23;
+    font-size: 14px;
+    padding: 0.625rem 1.5625rem;
+    margin-left: 30px;
+    font-family: 'Space Grotesk',sans-serif;
+    font-weight: 500;
 }
