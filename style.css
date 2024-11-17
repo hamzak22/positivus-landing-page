@@ -76,7 +76,7 @@ body {
     margin: auto;
     gap: 30px;
     padding: 0px 100px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
  
 .section-content {
@@ -118,4 +118,20 @@ body {
 .section-img img{
     width: auto;
     height: 515px;
+}
+
+.logotypes-container {
+    max-width: var(--maxwidth);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.logotypes img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    filter: saturate(0%);
 }
