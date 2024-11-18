@@ -19,6 +19,13 @@
     --medium : 600;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Space Grotesk', sans-serif;
     max-width: var(--maxwidth);
@@ -27,11 +34,10 @@ body {
 
 .navbar {
     height: 4.25rem;
-    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    padding: 20px 100px 0px;
     margin-top: 20px;
 }
 
@@ -41,19 +47,27 @@ body {
     justify-content: center;
 }
 
-.menu ul {
+nav ul {
     display: flex;
-    gap: 2.625rem;
-    text-decoration: none;
     list-style: none;
-    font-weight: var(--regular);
+    gap: 20px;
+}
+nav ul li{
+    margin: 0px 5px;
+    gap: 20px;
 }
 
-.menu ul a{
+nav ul li a{
     text-decoration: none;
     color: var(--primary-color-dark);
-    font-weight: var(--regular);
-    font-size: 1.1rem;
+    padding: 8px 10px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color-green);
+    background-color: var(--primary-color-dark);
 }
 
 .menu-btn {
@@ -107,6 +121,8 @@ body {
     font-weight: 500;
     margin: 0;
     margin-top: 10px;
+    border: none;
+    border-radius: 14px;
 
 }
 
@@ -134,4 +150,68 @@ body {
     height: auto;
     margin: auto;
     filter: saturate(0%);
+}
+
+.ri-menu-line {
+    display: none;
+}
+
+/* Mobile Design */
+
+@media (width<940px) {
+    nav {
+        padding: 0px 40px;
+    }
+
+    .navlinks{
+        position: fixed;
+        top: 90px;
+        left: 0px;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        background-color: var(--primary-color-dark);
+        color: var(--primary-color-green);
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .open {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        margin: 40px 0px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: var(--primary-color-green);
+    }
+
+    nav ul li a:hover {
+        background-color: var(--primary-color-green);
+        color: var(--primary-color-dark);
+    }
+
+    nav .menu-btn {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+        left: -20px;
+    }
+
+    .logo img{
+        width: 75%;
+        height: auto;
+    }
+
+    .ri-menu-line {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+    }
 }

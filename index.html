@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <title>Positivus Landing Page</title>
 </head>
 <body>
@@ -13,7 +17,7 @@
         </div>
 
         <div class="menu">
-            <ul>
+            <ul class="navlinks open" id="navlinks">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Services</a></li>
@@ -21,8 +25,10 @@
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-
             <button class="menu-btn">Request a Quote</button>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="ri-menu-line" id="hamburger"></i>
         </div>
     </nav>
 
@@ -46,4 +52,6 @@
     </div>
     
 </body>
+
+<script src="main.js"></script>
 </html>
