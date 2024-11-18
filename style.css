@@ -202,15 +202,16 @@ nav ul li a:hover {
     .logo {
         margin: 0px;
         padding: 0px;
-        width: 144px;
-        height: auto;
-        padding-left: 20px;
-        margin-right: 222px;
+        
     }
 
     .logo img{
-        width: 75%;
+        margin: 0px;
+        padding: 0px;
+        width: 144px ;
         height: auto;
+        padding-left: 20px;
+        margin-right: 222px;
     }
 
     .ri-menu-line {
