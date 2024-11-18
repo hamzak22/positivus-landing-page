@@ -22,206 +22,81 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
+    box-sizing: border-box;  
+    font-family: 'Space Grotesk',sans-serif; 
 }
 
-body {
-    font-family: 'Space Grotesk', sans-serif;
-    max-width: var(--maxwidth);
-    margin: auto;
-}
-
-.navbar {
-    height: 4.25rem;
+nav {
+    height: 80px;
+    background-color: white;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px 100px 0px;
+    justify-content: space-between;
+    padding: 30px 100px;
     margin-top: 20px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav .logo img {
+    height: 36px;
+    width: auto;
 }
-
-nav ul {
+nav ul{
     display: flex;
     list-style: none;
-    gap: 20px;
-}
-nav ul li{
-    margin: 0px 5px;
-    gap: 20px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
     color: var(--primary-color-dark);
-    padding: 8px 10px;
-    transition: 0.3s ease;
-    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.2px;
 }
 
-nav ul li a:hover {
-    color: var(--primary-color-green);
-    background-color: var(--primary-color-dark);
-}
-
-.menu-btn {
+ul button {
+    font-size: 20px;
     background-color: white;
-    border-radius: 0.875rem;
-    border: 2px solid #191A23;
-    font-size: 14px;
-    padding: 0.625rem 1.5625rem;
-    margin-left: 30px;
-    font-family: 'Space Grotesk',sans-serif;
-    font-weight: 500;
-}
-
-.section-container {
-    max-width: var(--maxwidth);
-    display: flex;
-    margin-inline: auto;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    gap: 30px;
-    padding: 0px 100px;
-    margin-top: 70px;
-}
- 
-.section-content {
-    flex: 1;
-    margin: auto;
-}
-
-.section-heading{
-    font-size: var(--heading1);
-    font-weight: 600;
-    margin: 0;
-    margin-bottom: 30px;
-    line-height: auto;
-}
-
-.section-desc{
-    font-size: var(--heading4);
-    line-height: 28px;
-    margin: 0;
-    margin-bottom: 30px;
-}
-
-.btn-black {
-    padding: 20px 35px;
-    background-color: var(--primary-color-dark);
-    color: var(--primary-color-light);
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    margin: 0;
-    margin-top: 10px;
-    border: none;
+    border: 2px solid var(--primary-color-dark);
     border-radius: 14px;
-
+    padding: 20px 35px;
 }
 
-.section-img {
-    flex: 1;
-    margin: 0;
-}
-
-.section-img img{
-    width: auto;
-    height: 515px;
-}
-
-.logotypes-container {
-    max-width: var(--maxwidth);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-top: 70px;
-}
-
-.logotypes img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    filter: saturate(0%);
-}
-
-.ri-menu-line {
+.menu-icon i {
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
     display: none;
 }
 
-/* Mobile Design */
-
-@media (width<940px) {
-    nav {
-        padding: 0px;
-    }
-
-    .navlinks{
+@media (max-width:940px) {
+    nav ul{
         position: fixed;
-        top: 90px;
-        left: 0px;
-        display: block;
+        top: 80px;
+        left: -100%;
+        background-color: #111;
         height: 100vh;
         width: 100%;
+        display: block;
         text-align: center;
-        background-color: var(--primary-color-dark);
-        color: var(--primary-color-green);
-        transform: translateX(-100%);
         transition: 0.5s;
     }
 
-    .open {
-        transform: translateX(0);
-    }
-
     nav ul li {
-        margin: 40px 0px;
+        margin: 40px 0;
     }
 
     nav ul li a {
+        color: wheat;
         font-size: 20px;
-        color: var(--primary-color-green);
     }
 
-    nav ul li a:hover {
-        background-color: var(--primary-color-green);
-        color: var(--primary-color-dark);
-    }
-
-    nav .menu-btn {
-        display: none;
-    }
-
-    .logo {
-        margin: 0px;
-        padding: 0px;
-        
-    }
-
-    .logo img{
-        margin: 0px;
-        padding: 0px;
-        width: 144px ;
-        height: auto;
-        padding-left: 20px;
-        margin-right: 222px;
-    }
-
-    .ri-menu-line {
+    .menu-icon i{
         display: block;
-        font-size: 20px;
-        font-weight: 600;
     }
-    .menu-icon{
-        padding: 0px;
-        margin: 0px;
-        padding-right: 20px;
+
+    .open {
+        left: 0;
     }
 }
