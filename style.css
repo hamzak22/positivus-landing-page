@@ -160,7 +160,7 @@ nav ul li a:hover {
 
 @media (width<940px) {
     nav {
-        padding: 0px 40px;
+        padding: 0px;
     }
 
     .navlinks{
